@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#558B34</color>
+    <color name="colorAccent">#69B331</color>
+    <color name="diceBrown">#483F24</color>
+    <color name="diceYellow">#FFE403</color>
+    <color name="failRed">#FF0000</color>
+</resources>
