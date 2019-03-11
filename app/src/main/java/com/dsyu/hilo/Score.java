@@ -9,10 +9,10 @@ public class Score {
     }
 
     public void addToScore() {
-        score = String.valueOf(Integer.parseInt(score) + 1);
+        score = String.valueOf( Integer.parseInt( score ) + 1 );
     }
 
-    public void resetScore() {
-        score = "0";
+    public void subtractFromScore() {
+        score = String.valueOf( Integer.parseInt( score ) - 2 );
     }
 }

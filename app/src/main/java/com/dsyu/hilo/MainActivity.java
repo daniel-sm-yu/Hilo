@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                questionTextView.setText("Will the next roll be higher or lower?");
-
                 // Saves the previous for comparison before clearing it
                 int previousValue = Integer.parseInt(totalValue.getTotalValue());
                 totalValue.resetTotalValue();
@@ -69,10 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 // Updates score and displays on screen
                 if (Integer.valueOf(totalValue.getTotalValue()) >= previousValue) {
                     score.addToScore();
+                    questionTextView.setText("Correct!");
                 }
                 else {
-                    score.resetScore();
-                    questionTextView.setText("Game Over, Try Again!");
+                    score.subtractFromScore();
+                    questionTextView.setText("Wrong!");
                 }
                 scoreTextView.setText(score.getScore());
             }
@@ -81,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
         lowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                questionTextView.setText("Will the next roll be higher or lower?");
 
                 // Saves the previous for comparison before clearing it
                 int previousValue = Integer.parseInt(totalValue.getTotalValue());
@@ -93,10 +90,11 @@ public class MainActivity extends AppCompatActivity {
                 // Updates score and displays on screen
                 if (Integer.valueOf(totalValue.getTotalValue()) <= previousValue) {
                     score.addToScore();
+                    questionTextView.setText("Correct!");
                 }
                 else {
-                    score.resetScore();
-                    questionTextView.setText("Game Over, Try Again!");
+                    score.subtractFromScore();
+                    questionTextView.setText("Wrong!");
                 }
                 scoreTextView.setText(score.getScore());
             }
