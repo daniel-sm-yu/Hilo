@@ -1,6 +1,6 @@
 # Hilo
 Two dice are rolled over and over again. 
-You must guess whether the next roll will be higher or lower than the current roll. 
+Your job is to guess whether the next roll will be higher or lower than the current roll. 
 Each correct guess is worth 1 point, displayed at the upper right corner of the screen.
 Each incorrect guess is worth -2 points.
 <pre>
